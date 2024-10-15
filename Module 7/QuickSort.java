@@ -4,7 +4,7 @@ public class QuickSort {
         int i = lo;
         int j = hi;
         while (true) {
-            while (i <= j && a[lo].compareTo(a[i]) > 0) i++;
+            while (i <= hi && a[lo].compareTo(a[i]) > 0) i++;
             while (j > lo && a[lo].compareTo(a[j]) < 0) j--;
             if (i >= j) break;
             swap(a, i, j);
